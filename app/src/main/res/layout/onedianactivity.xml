@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+   >
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1C6DAF"
+        android:weightSum="1"
+        android:layout_weight="0.05">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_logo"
+            android:id="@+id/imageView"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editText_shuru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sharp"
+            android:textCursorDrawable="@null"
+            android:textColor="#B0B0B0"
+            android:textColorHint="#eeeee0"
+            android:layout_weight="1.1">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_hornzition"
+        android:layout_weight="0.03"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <HorizontalScrollView
+            android:id="@+id/horizontalscroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eaeaea"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:id="@+id/textview_caijing"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="财经"
+                        />
+                    <TextView
+                        android:id="@+id/textview_video"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="视频"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_tiyu"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="体育"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_minsheng"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="民生"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_nba"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="NBA"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_junshi"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="军事"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_yule"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="娱乐"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_shehui"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="社会"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_keji"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="科技"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_tuijian"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="推荐"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_meinv"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="美女"
+
+                        />
+                    <TextView
+                        android:id="@+id/textview_jiankang"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="健康"/>
+                    <TextView
+                        android:id="@+id/textview_gaoxiao"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="搞笑"/>
+                    <TextView
+                        android:id="@+id/textview_duanzi"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="段子"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout_qiehuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8.5"
+        >
+
+    </FrameLayout>
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/vp_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="8.5" >-->
+
+    <!--</android.support.v4.view.ViewPager>-->
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/onedianqiehuan"
+        />
+</LinearLayout>
