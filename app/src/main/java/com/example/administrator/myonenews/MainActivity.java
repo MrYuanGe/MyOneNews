@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.animation.AlphaAnimation;
+import android.widget.Toast;
 
 import com.example.administrator.myonenews.utils.UpdateManager;
 
@@ -31,7 +32,16 @@ public class MainActivity extends AppCompatActivity {
 
         //动画作用域
         findViewById(R.id.activity_main).startAnimation(animation);
-
+        getTimer();
     }
-
+    public void getTimer(){
+       Timer timer=new Timer();
+        TimerTask timerTask=new TimerTask() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, "这是我做的修改", Toast.LENGTH_SHORT).show();
+            }
+        };
+        timer.schedule(timerTask,1000);
+    }
 }
